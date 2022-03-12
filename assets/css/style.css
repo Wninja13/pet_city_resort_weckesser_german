@@ -1,0 +1,419 @@
+* {
+    margin: 0;
+    padding: 0; 
+    box-sizing: border-box;
+} 
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    background-color: #ebebeb; 
+    width: 100%;
+}
+/*empieza header ¿agregar un menu desplegable estaría bien?*/
+header{
+    background-color: #7B9E87; 
+    width: 1138px; 
+    height: 130px;
+    display: block; 
+    margin: 0 auto;
+} 
+
+#contenedorNav{
+    width: 1138px;
+    height: 130px;
+}
+
+#navegacion{
+    width: 600px;
+    height: 60px; 
+    display: inline;
+}
+
+.header__logo{
+    width: 200px;
+    height: 150px;
+    display:inline-block;
+}
+
+.navegacion__lista{
+    list-style-type: none;
+    margin: 30px 0px 0px 0px;
+    text-align: center; 
+    padding: 20px;
+    float: right;
+} 
+
+.navegacion__elementoLista{
+    display: inline-block;
+    font-size: 16px; 
+    text-align: right;
+} 
+
+.elementoLista__link{
+    text-decoration: none;
+    padding: 0.3em;  
+}
+/*termina header*/
+/*empieza index.html no se que podría usar para darle más dinamismo ¿carrusel?*/
+.logoSlogan{
+    width: 1138px; 
+    height: 300px; 
+    margin: 0 auto; 
+    border-bottom: solid 1px black;
+} 
+
+#logo{
+    width: 250px; 
+    height: 250px; 
+    margin-top: 30px;
+    float: left;
+} 
+
+#slogan{
+    text-align: center;
+    font-size: 30px;
+    font-weight: 300;
+    color: #005f73; 
+    margin-top: 150px; 
+    margin-left: 150px;
+    float: left;
+} 
+#tituloPrincipal{
+    width: 1138px; 
+    height: 40px; 
+    text-align: center; 
+    margin: 0 auto; 
+    color: #757878; 
+    padding: 10px 0px 0px 0px;
+}
+
+#cartaPresentacion{ 
+    width: 1138px; 
+    height: 200px;
+    text-align: justify; 
+    margin: 0 auto; 
+    line-height: 25px; 
+    color: #757878;
+} 
+
+.cartaPresentacion__salto{
+    display: block;
+} 
+/*cierreindex.html*/
+/* Empieza pie de página-me gustaría hacerlo con los iconitos de las redes sociales y agregarle un vínculo a la dirección al google maps*/
+#pieDePagina{
+    background-color: #7B9E87; 
+    width: 1138px; 
+    height: 130px;
+    display: block; 
+    margin: 0 auto; 
+    clear: both; 
+}  
+
+.pieDepagina__elementos{
+    margin-top: 45%;
+}
+
+#copy{
+    position: relative; 
+    width: 33.33%; 
+    height: 33.33%; 
+    display: inline; 
+    text-align: center; 
+    color: #565858;
+} 
+
+#contacto{
+    position: relative; 
+    width: 33.33%; 
+    height: 33.33%; 
+    display: inline; 
+    text-align: center; 
+    color: #565858;
+}
+
+#RRSS{
+    position: relative; 
+    width: 33.33%; 
+    height: 33.33%; 
+    display: inline; 
+    text-align: center;
+    color: #565858;
+}
+/*Fin del pie de página*/ 
+/*Empieza Nosotros.html me gustaría hacer tarjetas en las fotoscon alguna descripción genérica cuando pasa el cursor por encima. Siento que le falta dinamismo a la página.*/
+#contenedor{
+    width: 1138px; 
+    height: 250px;
+    margin: 0 auto;
+} 
+
+.columna1{
+    float: left;
+}
+
+.columna2{
+    width: 569px;
+    float: right;
+}
+
+.columna1__titulo{ 
+    height: 60px;
+    width: 500px;
+    text-align: center; 
+    vertical-align: middle;
+    line-height: 20px; 
+    padding: 20px 20px 20px;
+    margin: 0px;
+} 
+
+.columna1__texto{
+    float: left;
+    width: 550px; 
+    height: 120px; 
+    border-right: black solid; 
+    text-align: justify; 
+    padding:0px 20px 20px 20px; 
+    margin: 0px 0px 10px 0px;
+} 
+
+.columna2__titulo{
+    height: 60px;
+    width: 500px;
+    line-height: 100px; 
+    float:right;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 20px;
+    padding: 20px 20px 20px 20px;
+}
+
+.columna2__texto{
+    float:right; 
+    width: 560px; 
+    height: 120px;
+    padding: 0px 0px 40px 0px;
+    text-align: justify;
+}
+
+.fotos{
+    width: 1138px; 
+    height: 200px;  
+    margin: 0 auto;
+} 
+
+.fotosGrupo1{
+    width: 569px;
+    height: 200px;  
+    float: left; 
+}
+
+.fotosGrupo2{
+    width: 569px;
+    height: 200px; 
+    float: left; 
+} 
+
+.image1{
+    float: left;
+} 
+
+.image2{ 
+    float: left;
+}
+
+.image3{ 
+    float: left;
+}
+
+.image4{ 
+    float: left; 
+}
+
+.fotosPerros{
+    width: 284,5px; 
+    height: 200px; 
+    padding: 5px; 
+    clear: both;
+} 
+/*termina nosotros.html*/
+/*empieza experiencia_pet_city.html*/
+.superior{
+    width: 1138px; 
+    height: 500px; 
+    margin: 0 auto;
+} 
+
+#superior__banner{
+    width: 1138px; 
+    height: 500px; 
+}
+
+.contenedorExperiencias{
+    width: 1138px; 
+    height: 525px; 
+    margin: 0 auto;
+} 
+
+.contenedorExperiencias__pazMental{
+    text-align: center; 
+    border-bottom: solid 2px black;
+} 
+
+#contenedorExperiencias__pazMental__titulo{
+    color: #757878; 
+    font-size: 35px;
+    margin: 20px 0px 10px;
+} 
+
+#contenedorExperiencias__pazMental__texto{
+    color: #565858; 
+    margin: 0px 0px 25px;
+} 
+
+.contenedorExperiencias__compromiso{
+    text-align: center; 
+    border-bottom: solid 2px black;
+} 
+
+#contenedorExperiencias__compromiso__titulo{
+    color: #757878; 
+    font-size: 35px;
+    margin: 20px 0px 10px;
+} 
+
+#contenedorExperiencias__compromiso__texto{
+    color: #565858; 
+    margin: 0px 0px 25px;
+} 
+
+.contenedorExperiencias__resena{
+    text-align: center;
+} 
+
+#contenedorExperiencias__resena__titulo{ 
+    text-align: center;
+    color: #757878; 
+    font-size: 35px;
+    margin: 20px 0px 10px;
+} 
+
+#contenedorExperiencias__resena__texto{
+    text-align: center;
+    color: #565858; 
+    margin: 0px 0px 25px; 
+    font-style: italic;
+} 
+
+#cliente{
+    text-align: center; 
+    color: #565858;
+} 
+/*termina experiencia_pet_city.html*/ 
+/*empieza servicios.html*/
+.servicios{
+    width: 1138px; 
+    height: 70px; 
+    margin: 0 auto;
+} 
+
+#servicios__titulo{
+    text-align: center;
+    color: #757878; 
+    font-size: 35px;
+    margin: 20px 0px 10px;
+} 
+
+#servicios__texto{
+    text-align: center;
+    color: #565858; 
+    margin: 0px 0px 25px;
+} 
+
+.tabla{
+    width: 1138px; 
+    height: 100px; 
+    margin: 0 auto; 
+}
+
+table{
+    margin: 30px 0px 30px 0px;
+}
+
+/*tipografia de tabla y colores*/
+
+th{
+    letter-spacing: 2px;
+    text-align: center; 
+    background-color: #763d3d; 
+    color: #ebebeb;
+} 
+
+td{
+    letter-spacing: 1px; 
+    text-align: center;
+} 
+
+.requisitos{
+    width: 1138px; 
+    height: 150px; 
+    margin: 0 auto;
+} 
+
+#requisitos__titulo{
+    text-align: center;
+    color: #757878; 
+    font-size: 35px;
+    margin: 20px 0px 10px;
+} 
+
+#requisitos__texto{
+    text-align: center;
+    color: #565858; 
+    margin: 0px 0px 25px;  
+    font-size: 16; 
+    list-style: none;
+} 
+/*termina servicios.html*/
+/*empiezacontactenos.html*/
+.introYformulario{
+    width: 1138px; 
+    height: 500px; 
+    margin: 0 auto;
+}
+
+.intro{
+    width: 569px; 
+    height: 200px; 
+    float: left; 
+    border-right: black solid 1px; 
+    text-align: center; 
+    padding-top: 10px;
+}
+
+.formulario{ 
+    width: 569px; 
+    height: 200px; 
+    float: right; 
+    padding-left: 15px;
+} 
+
+#intro__titulo{
+    color: #757878; 
+    font-size: 35px;
+    margin: 20px 0px 15px;
+} 
+
+#intro__texto{
+    text-align: center;
+    color: #565858; 
+    margin: 0px 0px 25px;  
+    font-size: 16;
+} 
+
+label{
+    display: inline-block; 
+    width: 200px;
+} 
+/*final contactenos.html*/

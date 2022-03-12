@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./assets/image/Pet City - copia.png"/> 
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Bienvenidos a Pet City Resort.</title>
+</head>
+<body>
+<!--fila de logo + barra de nav superior-->
+<header> 
+    <div id="contenedorNav">
+        <a href="index.html"><img class="header__logo"src="./assets/image/Pet City - copia.png"></a>
+        <nav id="navegacion"> 
+            <ul class="navegacion__lista">
+                <li class="navegacion__elementoLista">
+                    <a class="elementoLista__link" href="index.html">Home</a>
+                </li>
+                <li class="navegacion__elementoLista">
+                    <a class="elementoLista__link" href="Nosotros.html">Nosotros</a>
+                </li>
+                <li class="navegacion__elementoLista">
+                    <a class="elementoLista__link" href="servicios.html">Servicios</a>
+                </li>
+                <li class="navegacion__elementoLista">
+                    <a class="elementoLista__link" href="./experiencia_pet_city.html">Experiencia Pet City Resort</a>
+                </li>
+                <li class="navegacion__elementoLista">
+                    <a class="elementoLista__link" href="contactenos.html">Contáctenos</a>
+                </li>
+            </ul>
+        </nav>
+    </div> 
+</header>
+<!--Cierre fila logo+ barra de nav superior--> 
+<div class="introYformulario">
+    <div class="intro">
+        <h3 id="intro__titulo">SOLICITAR EL SERVICIO DESEADO</h3> 
+        <p id="intro__texto">Es importante que llenes la información que te solicitamos a contnuación para que podamos ofrecer el servicio que mejor se ajusta a vos y a tu mascota.</p>
+    </div> 
+<br>
+<!--formulario de contacto--> 
+    <div class="formulario">
+        <form action="contacto" method="post" enctype="text/plain"> 
+            <div class="form-group">
+                <label for="nombre y apellido"> 
+                    <span>Nombre y Apellido:</span> 
+                    <input type="text" id="nombre y apellido" placeholder="Juan Gomez" required>
+                </label>
+            </div>
+            <br>
+            <div class="form-group">
+                <label for="telefono">
+                    <span>Teléfono:</span>
+                    <input type="number" id="telefono" placeholder="1136385965" required>
+                </label>
+            </div>
+            <br>
+            <div class="form-group">
+                <label for="e-mail">
+                    <span>E-mail:</span>
+                    <input type="email" name="E-mail" id="e-mail" placeholder="ejemplo@gmail.com" autocomplete="email" required>
+                </label> 
+            </div>
+            <br>
+            <div class="form-group">
+                <label for="direccion">
+                    <span>Dirección y altura:</span>
+                    <input type="text" type="number" name="Dirección y altura" id="direccion y altura" placeholder="Ej: Calle Falsa 123" required>
+                </label>
+            </div>
+            <br>
+            <div class="form-group">
+                <label for="localidad">
+                    <span>Localidad:</span>
+                    <input type="text" name="Localidad" id="altura" required>
+                </label>
+            </div>
+            <br>
+            <div class="form-group">
+                <label> 
+                    <span>Motivo de su contacto:</span> 
+                    <select name="Servicio">
+                        <option value="transporte de mascota.">Transporte de mascotas.</option>
+                        <option value="hospedaje de mascota.">Hospedaje de mascotas.</option> 
+                        <option value="adiestramiento">Adiestramiento.</option>
+                    </select>
+                </label> 
+            </div>
+            <br>
+            <input type="submit" value="Enviar formulario"/> 
+            <input type="reset" value="Limpiar formulario">
+        </form> 
+    </div> 
+</div>
+<!--cierre formulario--> 
+<!--inicio footer-->
+    <footer id="pieDePagina"> 
+        <div class="pieDePagina__elementos">
+            <h4 id="copy">Copyright &#169 2022 Pet City Resort/todos los derechos reservados.</h4> 
+            <h4 id="contacto">Of, comercial: Av. falsa 1452, Pilar (1642) Correo electrónico: contacto@petcity.com</h4> 
+            <h4 id="RRSS">RRSS</h4>
+        </div>
+    </footer>
+</body>
+</html>
