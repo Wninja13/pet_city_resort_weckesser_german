@@ -5,14 +5,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="./assets/image/Pet City - copia.png"/> 
-    <link rel="stylesheet" href="./assets/css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/css/style.css"> 
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>Bienvenidos a Pet City Resort.</title> 
 </head>
 <body>
 <!--fila de logo + barra de nav superior-->
 <header> 
-<div id="contenedorNav">
-    <a href="index.html"><img class="header__logo"src="./assets/image/Pet City - copia.png"></a>
+    <div id="contenedorNav">
+        <a href="index.html"><img class="header__logo"src="./assets/image/Pet City - copia.png"></a> 
+        <a href="#" class="botonDesplegable">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
         <nav id="navegacion"> 
             <ul class="navegacion__lista">
                 <li class="navegacion__elementoLista">
@@ -32,31 +38,32 @@
                 </li>
             </ul>
         </nav>
-</div>
+    </div> 
 </header>
 <!--Cierre fila logo+ barra de nav superior--> 
-<div id="contenedor">
-<div class="columna1">
-    <h2 class="columna1__titulo">Nuestra historia y nuestra visión.</h2>
-    <p class="columna1__texto">Pet City restore para mascotas empieza como una idea de amigos unidos por una pasión, las mascotas. Creimos que era posible trasladar nuestra pasión a una realidad y materializarla con todos los apasionados por las mascotas como nosotros. Todo fue movido por el deseo de cuidar, entender y brindar un servicio de calidad tanto a los animalitos que nos acompañan en nuestra vida diaria como a sus familiares humanos que solo buscan lo mejor para ellos. Asimismo, todo esto surgió con la idea de mejorar nuestra relación día a día con nuestros compañeros de cuatro patas.</p>
+<div id="contenedorTexto">
+    <article class="nota1">
+        <h2 class="columna1__titulo">Nuestra historia y nuestra visión.</h2>
+        <p class="columna1__texto">Pet City restore para mascotas empieza como una idea de amigos unidos por una pasión, las mascotas. Creimos que era posible trasladar nuestra pasión a una realidad y materializarla con todos los apasionados por las mascotas como nosotros. Todo fue movido por el deseo de cuidar, entender y brindar un servicio de calidad tanto a los animalitos que nos acompañan en nuestra vida diaria como a sus familiares humanos que solo buscan lo mejor para ellos. Asimismo, todo esto surgió con la idea de mejorar nuestra relación día a día con nuestros compañeros de cuatro patas.</p> 
+    </article>
+    <article class="columna2">
+        <h2 class="columna2__titulo">¿Qué buscamos con este proyecto?</h2>
+        <p class="columna2__texto">Nos esforzamos para brindar un servicio de alta calidad y a la medida de sus necesidades. Queremos ser su aliado en la educación y el cuidado de su mascota, ofreciéndole una amplia gama de servicios a domicilio y en nuestro exclusivo campo en Pilar. Además trabajamos con los mejores profesionales en cada especialidad. Por ello, contamos con un equipo de profesionales, asistentes y colaboradores de primera calidad y de máxima excelencia.</p> 
+    </article>
 </div>
-<div class="columna2">
-    <h2 class="columna2__titulo">¿Qué buscamos con este proyecto?</h2>
-    <p class="columna2__texto">Nos esforzamos para brindar un servicio de alta calidad y a la medida de sus necesidades. Queremos ser su aliado en la educación y el cuidado de su mascota, ofreciéndole una amplia gama de servicios a domicilio y en nuestro exclusivo campo en Pilar. Además trabajamos con los mejores profesionales en cada especialidad. Por ello, contamos con un equipo de profesionales, asistentes y colaboradores de primera calidad y de máxima excelencia.</p>
-</div>
-</div>
-<div class="fotos">
-    <div class="image1">
-        <img class="fotosPerros"" src="./assets/image/1.jpg" alt="perros en pileta"/> 
-    </div>
-    <div class="image2">
-        <img class="fotosPerros" src="./assets/image/2.jpg" alt="perros jugando en parque"/>
-    </div>
-    <div class="image3">
-        <img class="fotosPerros" src="./assets/image/3.jpg" alt="perros jugando con pelota"/> 
-    </div>
-    <div class="image4"> 
-        <img class="fotosPerros" src="./assets/image/5.jpg" alt="perro sonriendo"> 
+    <div class="fotos">
+        <div class="image1">
+            <img class="fotosPerros"" src="./assets/image/1.jpg" alt="perros en pileta"/> 
+        </div>
+        <div class="image2">
+            <img class="fotosPerros" src="./assets/image/2.jpg" alt="perros jugando en parque"/>
+        </div>
+        <div class="image3">
+            <img class="fotosPerros" src="./assets/image/3.jpg" alt="perros jugando con pelota"/> 
+        </div>
+        <div class="image4"> 
+            <img class="fotosPerros" src="./assets/image/5.jpg" alt="perro sonriendo"> 
+        </div> 
     </div>
 </div>
 <!--inicio footer-->
@@ -66,6 +73,8 @@
         <h4 id="contacto">Of, comercial: Av. falsa 1452, Pilar (1642) Correo electrónico: contacto@petcity.com</h4>  
         <h4 id="RRSS">RRSS</h4>
     </div>
-</footer>
+</footer> 
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> 
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 </html>

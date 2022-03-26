@@ -8,60 +8,121 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 14px;
     background-color: #ebebeb; 
-    width: 100%;
+    width: 100%; 
 }
 /*empieza header ¿agregar un menu desplegable estaría bien?*/
 header{
     background-color: #7B9E87; 
-    width: 1138px; 
+    display: flex;
+    width: 100%; 
     height: 130px;
-    display: block; 
-    margin: 0 auto;
-} 
+    margin: 0 auto; 
+    justify-content: space-between; 
+    align-items: center;
+}  
+
+.a{
+    text-transform: none; 
+    cursor: pointer; 
+}
 
 #contenedorNav{
-    width: 1138px;
-    height: 130px;
+    width: 100%;
+    height: 130px; 
+    display: flex; 
+    flex-direction: row; 
+    justify-content: space-between;
+    align-items: center;
 }
 
 #navegacion{
     width: 600px;
     height: 60px; 
-    display: inline;
-}
+    display: flex; 
+    align-items: flex-end;
+} 
 
 .header__logo{
     width: 200px;
     height: 150px;
-    display:inline-block;
+} 
+
+.botonDesplegable{
+    position: absolute; 
+    top: 0.75rem; 
+    right: 1rem; 
+    display: none;
+    flex-direction: column; 
+    justify-content: space-between; 
+    width: 30px; 
+    height: 21px; 
+} 
+
+.botonDesplegable .bar{ 
+    height: 3px; 
+    width: 100%; 
+    background-color: white; 
+    border-radius: 10px;
+} 
+
+@media (max-width:400px){
+    .botonDesplegable {
+        display: flex;
+    }
+    .navegacion__lista{
+        display: none; 
+        width: 100%;
+    }
+    .header{
+        flex-direction: column; 
+        align-items: flex-start; 
+    }
+    .navegacion__lista{ 
+        width: 100%;
+        flex-direction: column;
+    }
+    .navegacion__elementoLista{
+        text-align: center; 
+    } 
+    .elementoLista__link{
+        padding: .5rem 1rem ;
+    }
+
 }
 
 .navegacion__lista{
     list-style-type: none;
     margin: 30px 0px 0px 0px;
-    text-align: center; 
     padding: 20px;
-    float: right;
 } 
 
 .navegacion__elementoLista{
-    display: inline-block;
+    display: inline-block; 
     font-size: 16px; 
-    text-align: right;
 } 
 
 .elementoLista__link{
     text-decoration: none;
     padding: 0.3em;  
-}
+} 
+
 /*termina header*/
 /*empieza index.html no se que podría usar para darle más dinamismo ¿carrusel?*/
 .logoSlogan{
-    width: 1138px; 
+    width: 100%;
     height: 300px; 
     margin: 0 auto; 
-    border-bottom: solid 1px black;
-} 
+    border-bottom: solid 1px black; 
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: stretch; 
+}  
+
+#indexbaner{
+    width: 100%;
+}
 
 #logo{
     width: 250px; 
@@ -75,22 +136,22 @@ header{
     font-size: 30px;
     font-weight: 300;
     color: #005f73; 
-    margin-top: 150px; 
-    margin-left: 150px;
-    float: left;
+    background-color: #ebebeb;
 } 
 #tituloPrincipal{
-    width: 1138px; 
+    width: 100%; 
     height: 40px; 
     text-align: center; 
     margin: 0 auto; 
     color: #757878; 
-    padding: 10px 0px 0px 0px;
+    padding: 10px 0px 0px 0px; 
+    display: flex; 
+    justify-content: space-around; 
+    align-items: center;
 }
 
 #cartaPresentacion{ 
-    width: 1138px; 
-    height: 200px;
+    width: 100%;
     text-align: justify; 
     margin: 0 auto; 
     line-height: 25px; 
@@ -104,15 +165,19 @@ header{
 /* Empieza pie de página-me gustaría hacerlo con los iconitos de las redes sociales y agregarle un vínculo a la dirección al google maps*/
 #pieDePagina{
     background-color: #7B9E87; 
-    width: 1138px; 
+    width: 100%; 
     height: 130px;
-    display: block; 
-    margin: 0 auto; 
-    clear: both; 
+    display: flex; 
+    justify-content: space-around; 
+    align-items: center; 
 }  
 
-.pieDepagina__elementos{
-    margin-top: 45%;
+.pieDePagina__elementos{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
 }
 
 #copy{
@@ -121,7 +186,8 @@ header{
     height: 33.33%; 
     display: inline; 
     text-align: center; 
-    color: #565858;
+    color: #565858;  
+    font-size: 1rem;
 } 
 
 #contacto{
@@ -130,7 +196,8 @@ header{
     height: 33.33%; 
     display: inline; 
     text-align: center; 
-    color: #565858;
+    color: #565858; 
+    font-size: 1rem;
 }
 
 #RRSS{
@@ -139,15 +206,18 @@ header{
     height: 33.33%; 
     display: inline; 
     text-align: center;
-    color: #565858;
+    color: #565858; 
+    font-size: 1rem;
 }
 /*Fin del pie de página*/ 
 /*Empieza Nosotros.html me gustaría hacer tarjetas en las fotoscon alguna descripción genérica cuando pasa el cursor por encima. Siento que le falta dinamismo a la página.*/
-#contenedor{
-    width: 1138px; 
-    height: 250px;
-    margin: 0 auto;
-} 
+#contenedorTexto{
+    width: 100%; 
+    display: flex;  
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: flex-start;
+}
 
 .columna1{
     float: left;
@@ -169,22 +239,15 @@ header{
 } 
 
 .columna1__texto{
-    float: left;
-    width: 550px; 
-    height: 120px; 
-    border-right: black solid; 
-    text-align: justify; 
-    padding:0px 20px 20px 20px; 
-    margin: 0px 0px 10px 0px;
+    width: 550px;
+    text-align: justify;
+    padding: 0px 20px 20px 20px;
 } 
 
 .columna2__titulo{
     height: 60px;
     width: 500px;
-    line-height: 100px; 
-    float:right;
     text-align: center;
-    vertical-align: middle;
     line-height: 20px;
     padding: 20px 20px 20px 20px;
 }
@@ -198,38 +261,25 @@ header{
 }
 
 .fotos{
-    width: 1138px; 
-    height: 200px;  
-    margin: 0 auto;
+    width: 100%; 
+    height: 300px;  
+    display: flex; 
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: space-between;
+    justify-content: space-around;
+    align-items: center;
 } 
 
 .fotosGrupo1{
     width: 569px;
     height: 200px;  
-    float: left; 
 }
 
 .fotosGrupo2{
     width: 569px;
     height: 200px; 
-    float: left; 
 } 
-
-.image1{
-    float: left;
-} 
-
-.image2{ 
-    float: left;
-}
-
-.image3{ 
-    float: left;
-}
-
-.image4{ 
-    float: left; 
-}
 
 .fotosPerros{
     width: 284,5px; 
@@ -328,9 +378,98 @@ header{
 #servicios__texto{
     text-align: center;
     color: #565858; 
-    margin: 0px 0px 25px;
+    margin: 0px 0px 7px;
+}  
+
+.row {
+    --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: calc(-1 * var(--bs-gutter-y));
+    margin-right: calc(-.5 * var(--bs-gutter-x));
+    margin-left: calc(-.5 * var(--bs-gutter-x));
+    justify-content: center;
+}
+
+.col-sd-3 col-md-6{
+    width: 100%;
+}
+
+.card{
+    width: 500px;
+}
+
+.card-text{ 
+    text-align: justify; 
+    display: inline-block; 
+    width: 100%;
+}
+
+#foto__tarjeta1{
+    width: 375px;  
+    padding-top: 65px;
 } 
 
+#foto__tarjeta2{ 
+    width: 375px;
+
+} 
+
+#foto__tarjeta3{
+    width: 375px;
+} 
+
+#foto__tarjeta4{
+    width: 375px; 
+    padding: 21px;
+}
+/*
+.lista li{
+    border: 1px solid #ffe066; 
+    border-radius: 5px; 
+    width: 100%;
+} 
+
+.item__titulo{
+    border: 1px solid crimson; 
+    background-color: #005f73;
+}
+
+.lista .cuerpoTarjeta{
+    padding: 10px; 
+    text-align: justify; 
+    border: solid 1px black; 
+    height: 25%;
+} 
+
+.lista .bontonContratar{
+    margin-top: auto; 
+    border-top: 1px solid #ffe066; 
+    text-align: center;
+} 
+
+.item1{
+    grid-area: a;
+}  
+
+.imgCaja1{
+    grid-area: a; 
+}
+
+.item2{
+    grid-area: b; 
+} 
+
+.item3{
+    grid-area: c;
+} 
+
+.item4{
+    grid-area: d;
+}
+/*
+/*
 .tabla{
     width: 1138px; 
     height: 100px; 
@@ -340,8 +479,6 @@ header{
 table{
     margin: 30px 0px 30px 0px;
 }
-
-/*tipografia de tabla y colores*/
 
 th{
     letter-spacing: 2px;
@@ -354,6 +491,7 @@ td{
     letter-spacing: 1px; 
     text-align: center;
 } 
+*/
 
 .requisitos{
     width: 1138px; 
